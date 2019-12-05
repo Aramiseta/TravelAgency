@@ -1,9 +1,18 @@
 package pl.accenture;
 
 public class Trip {
-    Date start;
-    Date end;
-    String destination;
+    private Date start;
+    private Date end;
+    private String destination;
+    private double price;
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
 
     public Trip(Date start, Date end, String destination) {
         this.start = start;
@@ -13,10 +22,10 @@ public class Trip {
 
 
 
-    public String getInfo()
+    public String toString()
     {
-        return "Poczatek wycieczki " + start.getInfo() + "\nKoniec wycieczki:" + end.getInfo() + "Destynacja: "
-            + destination;
+        return "\nPoczatek wycieczki " + start.toString() + "\nKoniec wycieczki: " + end.toString() + "\nDestynacja: "
+            + destination + "\nCena " + getPrice();
 
 }
 }

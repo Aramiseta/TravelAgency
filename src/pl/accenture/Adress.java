@@ -1,9 +1,10 @@
 package pl.accenture;
 
 public class Adress {
-    String street;
-    String zip;
-    String city;
+    private String street;
+    private String zip;
+    private String city;
+
 
     public Adress(String street, String zip, String city) {
         this.street = street;
@@ -13,7 +14,7 @@ public class Adress {
 
 
 
-    public String getInfo(){
+     public String toString(){
         return "Ulica " + street + "\nAdres pocztowy:" + zip + "\nMiasto:" + city + "\n";
     }
 }

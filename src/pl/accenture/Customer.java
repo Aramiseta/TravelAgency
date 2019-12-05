@@ -1,9 +1,9 @@
 package pl.accenture;
 
 public class Customer {
-    String name;
-    Adress adress;
-    Trip trip;
+    private String name;
+    private Adress adress;
+    private Trip trip;
 
 
     public Customer(String name) {
@@ -19,8 +19,8 @@ public class Customer {
         this.trip = trip;
     }
 
-    public void getInfo() {
-        System.out.println("Klient:" + name + "\nAdres:" + adress.getInfo() + "\nWycieczka:" + trip.getInfo() + "\n" );
+    public String toString() {
+        return "Klient:" + name + "\nAdres:" + adress.toString() + "\nWycieczka:" + trip.toString() + "\n";
     }
 
 
